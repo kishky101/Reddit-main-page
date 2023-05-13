@@ -1,0 +1,30 @@
+.search-bar {
+    max-width: 100%;
+    display: flex;
+    background-color: var(--grey-grade7);
+    border-radius: 50px;
+    padding-left: 24px;
+
+    &:hover {
+        border: 1px solid var(--light-blue);
+    }
+
+    img {
+        margin-right: 10px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding: 14px 0;
+        background-color: transparent;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+
+    }
+}
