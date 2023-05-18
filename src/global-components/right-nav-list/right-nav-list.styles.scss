@@ -1,4 +1,4 @@
-.nav-list {
+.right-nav-list {
 
 
 
@@ -8,23 +8,26 @@
         cursor: pointer;
         user-select: none;
         white-space: nowrap;
+        transition: all .05s;
+
 
         &:hover {
             background-color: var(--grey-grade7);
+            padding: 1.1rem 0;
         }
 
         p {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
 
         img#arrow {
-            padding-right: 5rem;
+            padding-right: 3.2rem;
         }
     }
 
     & &__icon180 {
         transform: rotate(180deg);
-        padding-left: 5rem;
+        padding-left: 3.2rem;
         //background-color: black;
     }
 
@@ -33,7 +36,7 @@
         justify-content: center;
         align-items: center;
         gap: 12px;
-        padding-left: 5rem;
+        padding-left: 3.2rem;
         
     }
 
@@ -52,7 +55,7 @@
 
         li {
             font-size: 1.4rem;
-            padding: 1rem 4.2rem 1rem 9.1rem;
+            padding: .8rem 4.2rem .8rem 4.4rem;
             cursor: pointer;
             color: var(--grey-grade2);
 

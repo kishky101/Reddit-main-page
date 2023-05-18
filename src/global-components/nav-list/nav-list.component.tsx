@@ -7,7 +7,7 @@ import './nav-list.styles.scss'
 
 type NavListProps = {
     title: string;
-    icon: string;
+    icon?: string;
 
 }
 
