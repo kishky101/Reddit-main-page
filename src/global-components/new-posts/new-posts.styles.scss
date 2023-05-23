@@ -1,9 +1,12 @@
 .new-posts {
     display: flex;
-    gap: 1.5rem;
+    gap: 2.4rem;
     border: 1px solid var(--grey-grade3);
     border-radius: 8px;
-    padding: 24px;
+    padding: 21px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    padding-right: 24px;
     background: var(--white-color);
 
     & &__arrows {
@@ -12,6 +15,10 @@
         gap: 10px;
         justify-content: flex-start;
         align-items: center;
+        margin-top: -1px;
+        position: relative;
+        left: 1px;
+        
     }
 
     & &__arrow {
@@ -22,14 +29,14 @@
     }
 
     & &__vote {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 500;
     }
 
     & &__main {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2.45rem;
     }
 
     & &__header {
@@ -70,7 +77,8 @@
     }
 
     & &__image {
-        
+        max-width: 560px;
+        max-height: 312px;
 
         img {
            max-width: 100%; 
@@ -81,6 +89,7 @@
     & &__footer {
         display: flex;
         justify-content: space-between;
+        margin-top: -2px;
     }
 
     & &__reactions {

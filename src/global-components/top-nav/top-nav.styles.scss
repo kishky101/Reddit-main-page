@@ -7,9 +7,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.7rem 5rem 1.6rem 5rem;
-    gap: 250px;
+    gap: 245px;
     width: 100%;
     background-color: var(--white-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 
     &:hover {
         .top-nav__search {
@@ -22,12 +25,18 @@
 
     & &__logo {
         width: max-content;
+        display: flex;
+        gap: 1.2rem;
 
         h1 {
             font-size: 2.8rem;
             font-weight: 500;
             line-height: 33px;
         }
+    }
+
+    & &__hamburger {
+        display: none;
     }
 
     & &__widgets {
@@ -56,8 +65,13 @@
         align-self: center;
         //width: 40%;
     }
+
+    @media screen and (max-width: 1200px) {
+        gap: 100px;
+        
+        & &__hamburger {
+            display: block;
+        }
+    }
 }
 
-.top-nav:hover > .top-nav__widgets > .top-nav__search > .search-bar {
-    border-color: var(--light-blue);
-}

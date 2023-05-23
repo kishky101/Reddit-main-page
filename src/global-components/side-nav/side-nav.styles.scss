@@ -1,8 +1,9 @@
 .side-nav {
     border: 1px solid var(--grey-grade1);
     max-width: 323px;
-    max-height: 947px;
-    min-height: 100vh;
+    width: 323px;
+    //max-height: 947px;
+    min-height: calc(100dvh - 77px);
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -12,8 +13,8 @@
     & &__group {
         display: flex;
         flex-direction: column;
-        gap: 5rem;
-        margin-top: 5rem;
+        gap: 4.5rem;
+        margin-top: 4.9rem;
     }
 
     & &__feeds {
@@ -44,6 +45,7 @@
 
         p {
             font-size: 1.6rem;
+            margin-top: -3px;
         }
     }
 

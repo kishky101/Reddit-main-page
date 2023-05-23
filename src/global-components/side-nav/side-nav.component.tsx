@@ -31,7 +31,7 @@ const SideNav = () => {
                         <NavList title="Sports" icon={sports}/>
                         <NavList title="Business, Economics" icon={bussiness} />
                         <NavList title="Crypto" icon={crypto} />
-                        <NavList title="Television" icon={television}/>
+                        <NavList title="Televison" icon={television}/>
                         <NavList title="Celebrity" icon={celebrity}/>
                         <NavList title="More Topics" icon={more} />
                     </div>

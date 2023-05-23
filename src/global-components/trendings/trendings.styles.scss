@@ -1,0 +1,21 @@
+.trendings {
+    margin-top: 5rem;
+    padding-left: 2px;
+
+    & &__topic {
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 2.4rem;
+        }
+
+    }
+
+    & &__posts {
+        display: flex;
+        gap: 1.8rem;
+    }
+
+
+}

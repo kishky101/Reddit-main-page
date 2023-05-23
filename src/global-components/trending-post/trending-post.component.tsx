@@ -1,20 +1,29 @@
 import React from "react";
-import Car from '../../assets/images/formula1.png'
-import Formula1 from '../../assets/images/car.png'
+//import Car from '../../assets/images/formula1.png'
+//import Formula1 from '../../assets/images/car.png'
+import black from '../../assets/images/black.png'
 
 import './trending-post.styles.scss'
 
-const TrendingPost:React.FC = () => {
+type TrendingPostProps = {
+    profile_img?: string;
+    profile_name: string;
+    post_heading: string;
+    post_img: string;
+    post_text: string;
+}
+
+const TrendingPost:React.FC<TrendingPostProps> = ({profile_img = black, profile_name, post_img, post_heading, post_text }) => {
 
     return (
-        <div className="trending-post" style={{backgroundImage: `url(${Formula1})`}}>
+        <div className="trending-post" style={{backgroundImage: `url(${post_img})`}}>
             <div className="trending-post__header">
-                    <img src={Car} alt="" />
-                    <p>Formula1</p>
+                    <img src={profile_img} alt="" />
+                    <p>{profile_name}</p>
             </div>
             <div className="trending-post__body">
-                <h3>2023 MoneyGram Haas VF-23 Livery</h3>
-                <p>Meet the new painting from the formula</p>
+                <h3>{post_heading}</h3>
+                <p>{post_text}</p>
             </div>
         </div>
     )

@@ -7,7 +7,8 @@
         justify-content: space-between;
         cursor: pointer;
         user-select: none;
-        white-space: nowrap;
+        //white-space: nowrap;
+        gap: 0.6rem;
 
         &:hover {
             background-color: var(--grey-grade7);
@@ -18,7 +19,7 @@
         }
 
         img#arrow {
-            padding-right: 5rem;
+            padding-right: 5.2rem;
         }
     }
 

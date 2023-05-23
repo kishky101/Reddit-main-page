@@ -1,0 +1,55 @@
+.main-layout {
+    display: flex;
+    gap: 4.9rem;
+
+    & &__aside {
+        position: sticky;
+        top: 77px;
+        //display: flex;
+        align-self: flex-start;
+    }
+
+    & &__trends {
+        margin-bottom: 5rem;
+    }
+
+    & &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 2.4rem;
+    }
+
+    & &__mains {
+        display: flex;
+        gap: 5rem;
+    }
+
+    & &__posts {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    & &__right {
+        position: sticky;
+        top: 77px;
+        align-self: flex-start;
+
+    }
+
+    @media screen and (max-width: 1200px) {
+        justify-content: center;
+
+        & &__aside {
+            position: absolute;
+            left: -323px;
+            transition: all .5s;
+            z-index: 99999999;
+
+
+            &--show {
+                left: 0;
+            }
+        }
+    }
+}

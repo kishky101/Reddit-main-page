@@ -6,6 +6,8 @@ import green from "../../assets/images/green.png"
 import movie from "../../assets/images/movie.png"
 import shrek from "../../assets/images/shrek.png"
 
+import './posts.styles.scss'
+
 // type NewPostsProps = {
 //     profile_image: string;
 //     profile_name: string;
@@ -18,7 +20,7 @@ import shrek from "../../assets/images/shrek.png"
 
 const Posts = () => {
     return (
-        <div>
+        <div className="posts">
            <NewPosts 
                 profile_image={videogames}
                 profile_name={"VideoGames"}
@@ -44,7 +46,7 @@ const Posts = () => {
                 post_time={25}
                 post_text={"What's your favorite shrek movie?"}
                 post_image={shrek}
-                comments={3}
+                comments={15}
            />
         </div>
     )

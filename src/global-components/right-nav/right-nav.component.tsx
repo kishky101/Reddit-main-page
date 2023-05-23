@@ -12,7 +12,7 @@ const RightNav: React.FC = () => {
                 <RightNavList title="Sports" />
                 <RightNavList title="Tv" />
                 <RightNavList title="Travel" />
-                <RightNavList title="Health Fitness" />
+                <RightNavList title="Health & Fitness" />
                 <RightNavList title="Fashion" />
             </div>
         </div>
