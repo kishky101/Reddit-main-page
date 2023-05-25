@@ -73,5 +73,32 @@
             display: block;
         }
     }
+
+    @media screen and (max-width: 860px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.7rem 1.6rem 1.6rem 1.6rem;
+
+        & &__logo {
+            align-items: center;
+
+            h1 {
+                font-size: 1.8rem;
+                line-height: 21.9px;
+            }
+        }
+
+        & &__widgets {
+            display: flex;
+            max-width: unset;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        & &__search {
+            display: none;
+        }
+    }
 }
 

@@ -110,4 +110,23 @@
         }
     }
 
+    @media screen and (max-width: 1050px) {
+        padding: 1.8rem 1.6rem;
+        border-radius: 0px;
+        
+        & &__image {
+            max-width: 100%;
+            max-height: 346px;
+            overflow: hidden;
+            border-radius: 8px;
+           
+
+    
+            img {
+               max-width: 100%; 
+               object-fit: cover;
+               object-position: center;
+            }
+        }
+    }
 }

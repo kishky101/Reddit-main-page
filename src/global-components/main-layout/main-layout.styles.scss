@@ -2,11 +2,16 @@
     display: flex;
     gap: 4.9rem;
 
+    // &--scroll {
+    //     overflow-y: hidden;
+    // }
+
     & &__aside {
         position: sticky;
         top: 77px;
         //display: flex;
         align-self: flex-start;
+        overflow: auto;
     }
 
     & &__trends {
@@ -30,6 +35,14 @@
         gap: 3.2rem;
     }
 
+    & &__postNav1 {
+        display: block;
+    }
+
+    & &__postNav2 {
+        display: none;
+    }
+
     & &__right {
         position: sticky;
         top: 77px;
@@ -40,6 +53,11 @@
     @media screen and (max-width: 1200px) {
         justify-content: center;
 
+        // &--scroll {
+        //     overflow-y: hidden;
+        //     overflow: hidden;
+        // }
+
         & &__aside {
             position: absolute;
             left: -323px;
@@ -48,8 +66,36 @@
 
 
             &--show {
+                //position: sticky;
                 left: 0;
+                top: 77px;
             }
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        & &__trends {
+            display: none;
+        }
+
+        & &__right {
+            display: none;
+        }
+
+        & &__title {
+            display: none;
+        }
+
+        & &__posts {
+            gap: .4rem;
+        }
+
+        & &__postNav1 {
+            display: none;
+        }
+
+        & &__postNav2 {
+            display: block;
         }
     }
 }

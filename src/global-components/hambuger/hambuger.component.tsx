@@ -8,7 +8,7 @@ const Hambuger = () => {
     const {isOpen, setIsOpen} = React.useContext(HamburgerContext);
     //console.log(isOpen);
     //(() => setIsOpen(true))();
-    console.log(isOpen);
+    //console.log(isOpen);
 
     const toggle = () => setIsOpen(!isOpen)
 
