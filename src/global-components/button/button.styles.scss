@@ -10,11 +10,28 @@
         border: 1px solid var(--light-blue);
         white-space: nowrap;
         max-height: 44px;
+        cursor: pointer;
+
+        &:hover {
+            border-color: var(--dark-blue);
+        }
+
+        &:focus {
+            border-color: var(--fade-blue);
+        }
 
         &--register {
             background-color: var(--light-blue);
             color: var(--white-color);
             border: none;
+
+            &:hover {
+                background-color: var(--dark-blue);
+            }
+    
+            &:focus {
+                background-color: var(--fade-blue);
+            }
         }
     }
 
@@ -26,12 +43,34 @@
             font-weight: 400;
             line-height: 16.41px;
             max-height: 40px;
+            opacity: .8;
+
+            &:hover {
+                border-color: var(--orange-color);
+                opacity: 1;
+            }
+    
+            &:focus {
+                border-color: var(--orange-color);
+                opacity: .7;
+            }
 
             &--register {
                 background-color: var(--orange-color);
                 color: var(--white-color);
                 border: none;
                 font-weight: 500;
+                opacity: .9;
+
+                &:hover {
+                    background-color: var(--orange-color);
+                    opacity: 1;
+                }
+        
+                &:focus {
+                    background-color: var(--orange-color);
+                    opacity: .7;
+                }
             }
 
             &--next {
