@@ -1,13 +1,10 @@
 .nav-list {
 
-
-
     & &__topic {
         display: flex;
         justify-content: space-between;
         cursor: pointer;
         user-select: none;
-        //white-space: nowrap;
         gap: 0.6rem;
 
         &:hover {
@@ -26,7 +23,6 @@
     & &__icon180 {
         transform: rotate(180deg);
         padding-left: 5rem;
-        //background-color: black;
     }
 
     & &__icon {

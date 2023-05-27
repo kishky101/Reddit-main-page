@@ -3,7 +3,7 @@ import SearchIcon from '../../assets/images/search.svg'
 
 import './search-bar.styles.scss'
 
-const SearchBar = () => {
+const SearchBar: React.FC = () => {
     return (
         <div className="search-bar">
             <img src={SearchIcon} alt="search-icon" />

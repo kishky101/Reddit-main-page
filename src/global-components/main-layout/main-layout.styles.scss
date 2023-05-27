@@ -2,14 +2,9 @@
     display: flex;
     gap: 4.9rem;
 
-    // &--scroll {
-    //     overflow-y: hidden;
-    // }
-
     & &__aside {
         position: sticky;
         top: 77px;
-        //display: flex;
         align-self: flex-start;
         overflow: auto;
     }
@@ -50,13 +45,12 @@
 
     }
 
+    & &__footer {
+        display: none;
+    }
+
     @media screen and (max-width: 1200px) {
         justify-content: center;
-
-        // &--scroll {
-        //     overflow-y: hidden;
-        //     overflow: hidden;
-        // }
 
         & &__aside {
             position: absolute;
@@ -66,7 +60,6 @@
 
 
             &--show {
-                //position: sticky;
                 left: 0;
                 top: 77px;
             }
@@ -96,6 +89,18 @@
 
         & &__postNav2 {
             display: block;
+        }
+
+        & &__footer {
+            display: block;
+            margin-top: .4rem;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        
+        & &__posts {
+            gap: .5rem;
         }
     }
 }

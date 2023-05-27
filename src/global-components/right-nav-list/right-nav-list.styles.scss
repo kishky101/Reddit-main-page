@@ -1,7 +1,5 @@
 .right-nav-list {
 
-
-
     & &__topic {
         display: flex;
         justify-content: space-between;
@@ -9,8 +7,6 @@
         user-select: none;
         white-space: nowrap;
         transition: all .05s;
-        
-        
 
         &:hover {
             background-color: var(--grey-grade7);
@@ -29,7 +25,6 @@
     & &__icon180 {
         transform: rotate(180deg);
         padding-left: 3.2rem;
-        //background-color: black;
     }
 
     & &__icon {

@@ -8,17 +8,8 @@ import shrek from "../../assets/images/shrek.png"
 
 import './posts.styles.scss'
 
-// type NewPostsProps = {
-//     profile_image: string;
-//     profile_name: string;
-//     vote_count: number;
-//     post_time: number;
-//     post_text: string;
-//     post_image?: string;
-//     comments: number;
-// }
 
-const Posts = () => {
+const Posts: React.FC = () => {
     return (
         <div className="posts">
            <NewPosts 
@@ -45,8 +36,10 @@ const Posts = () => {
                 vote_count={33}
                 post_time={25}
                 post_text={"What's your favorite shrek movie?"}
+                //post_text={"What do you think about the new game based on the Harry Potter books and movies?"}
                 post_image={shrek}
                 comments={15}
+                //comments={3}
            />
         </div>
     )

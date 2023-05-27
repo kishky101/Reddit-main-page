@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import NavList from "../nav-list/nav-list.component";
 import popular from '../../assets/images/popular.svg'
 import settings from '../../assets/images/settings.svg'
@@ -12,23 +12,9 @@ import celebrity from '../../assets/images/celebrity.svg'
 import more from '../../assets/images/more.svg'
 
 import './side-nav.styles.scss'
-//import { HamburgerContext } from "@/context/hambuger.context";
 
-const SideNav = () => {
 
-    // const {isOpen, setIsOpen} = useContext(HamburgerContext);
-    // const sideRef = React.useRef(document.createElement('div'));
-
-    // useEffect(() => {
-    //     const handler = (e: MouseEvent) => {
-    //         if (sideRef.current !== e.currentTarget) {
-    //             setIsOpen(false)   
-    //             //console.log(sideRef.current)
-    //         }
-    //     }
-
-    //     document.addEventListener("mousedown", handler)
-    // })
+const SideNav: React.FC = () => {
 
     return (
         <nav className="side-nav">

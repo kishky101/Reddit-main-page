@@ -1,7 +1,5 @@
 import React from "react";
 import CircleArrow from '../../assets/images/circle_down_ outline.svg'
-//import Hogwarts from '../../assets/images/hogwarts_legacy.png'
-//import VideoGames from '../../assets/images/videogames.png'
 import Comments from '../../assets/images/comments.svg'
 import Share from '../../assets/images/share.svg'
 import Save from '../../assets/images/save.svg'

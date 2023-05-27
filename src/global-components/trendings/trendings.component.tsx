@@ -4,22 +4,14 @@ import Car from '../../assets/images/formula1.png'
 import Formula1 from '../../assets/images/car.png'
 import minecraft from '../../assets/images/minecraft.png'
 import mario from '../../assets/images/mario.png'
-//import Formula1 from '../../assets/images/car.png'
 import girl from '../../assets/images/girl.png'
 import nba from '../../assets/images/nba.png'
 import lakers from '../../assets/images/lakers.png'
 
 import './trendings.styles.scss'
 
-// type TrendingPostProps = {
-//     profile_img: string;
-//     profile_name: string;
-//     post_heading: string;
-//     post_img: string;
-//     post_text: string;
-// }
 
-const Trendings = () => {
+const Trendings: React.FC = () => {
     return (
         <div className="trendings">
             <div className="trendings__topic">

@@ -11,7 +11,3 @@ export const HamburgerContext = React.createContext<HamburgerProps>({
     isOpen: false,
     setIsOpen: () => null
 })
-
-// export const HamburgerProvider: React.FC<React.ReactNode> = ({children}) => {
-//     return 
-// }
