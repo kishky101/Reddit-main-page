@@ -24,6 +24,8 @@
         gap: 10px;
         background-color: var(--grey-grade7);
         border-radius: 50px;
+        position: relative;
+        cursor: pointer;
 
         &--1 {
             padding: 8px 18px;
@@ -43,6 +45,31 @@
         }
     }
 
+    & &__dropdown {
+        position: absolute;
+        max-height: 256px;
+        max-width: 154px;
+        overflow-y: auto;
+        top: 3.8rem;
+        left: -3rem;
+        display: none;
+        padding: 2.4rem;
+        background-color: var(--white-color);
+        border-radius: .8rem;
+        
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--grey-grade2);
+            margin-bottom: 1.6rem;
+        }
+
+        &--show {
+            display: block;
+        }
+    }
+
     & &__second-sections {
         display: flex;
         gap: 24px;
@@ -52,11 +79,22 @@
         display: flex;
         align-items: center;
         gap: 6px;
+        cursor: pointer;
+
+        &:hover {
+            p {
+                color: var(--light-blue);
+            }
+        }
 
         p {
             font-size: 1.4rem;
             font-weight: 500;
             color: var(--grey-grade1);
         }
+    }
+
+    & &__more {
+        cursor: pointer;
     }
 }

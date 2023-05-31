@@ -31,6 +31,7 @@ const RightNavList: React.FC<RightNavListProps> = ({title}) => {
                     <li>AskMen</li>
                     <li>Leagueoflegends</li>
                     <li>Minecraft</li>
+                    <li>See more</li>
                 </ul>
             </div>
         </div>

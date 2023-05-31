@@ -1,10 +1,11 @@
 import React from "react";
-import CircleArrow from '../../assets/images/circle_down_ outline.svg'
+//import CircleArrow1 from '../../assets/images/circle_down_ outline.svg'
 import Comments from '../../assets/images/comments.svg'
 import Share from '../../assets/images/share.svg'
 import Save from '../../assets/images/save.svg'
 import More from '../../assets/images/more-fade.svg'
-
+import CircleArrow from "../helper/circle-arrow.component";
+import CircleUpArrow from "../helper/circle-up.component";
 import './new-posts.styles.scss'
 
 type NewPostsProps = {
@@ -17,13 +18,19 @@ type NewPostsProps = {
     comments: number;
 }
 
+
+
+
 const NewPosts:React.FC<NewPostsProps> = ({ profile_image, profile_name, vote_count, post_time, post_text, post_image, comments}) => {
+
     return (
         <div className="new-posts">
             <div className="new-posts__arrows">
-                <img src={CircleArrow} className="new-posts__arrow new-posts__arrow--up" />
+                {/* <img src={CircleArrow} className="new-posts__arrow new-posts__arrow--up" /> */}
+                <CircleUpArrow />
                 <p className="new-posts__vote">{vote_count}</p>
-                <img src={CircleArrow} className="new-posts__arrow new-posts__arrow--down" />
+                <CircleArrow />
+                {/* <img src={CircleArrow} className="new-posts__arrow new-posts__arrow--down" /> */}
             </div>
             <div className="new-posts__main">
                 <div className="new-posts__header">

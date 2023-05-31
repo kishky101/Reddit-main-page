@@ -55,6 +55,11 @@
             cursor: pointer;
             color: var(--grey-grade2);
 
+            &:last-of-type {
+                color: var(--light-blue);
+                font-weight: 500;
+            }
+
             &:hover {
                 background-color: var(--grey-grade7);
                 color: var(--black-color);

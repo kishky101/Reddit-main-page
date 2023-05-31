@@ -54,6 +54,7 @@
 
         & &__aside {
             position: absolute;
+            top: 66px;
             left: -323px;
             transition: all .5s;
             z-index: 99999999;
@@ -61,7 +62,7 @@
 
             &--show {
                 left: 0;
-                top: 77px;
+                top: 66px;
             }
         }
     }
