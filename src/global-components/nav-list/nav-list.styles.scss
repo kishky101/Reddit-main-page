@@ -13,16 +13,17 @@
 
         p {
             font-size: 1.6rem;
+            white-space: nowrap;
         }
 
-        img#arrow {
+        img.image-arrow {
             padding-right: 5.2rem;
         }
-    }
-
-    & &__icon180 {
-        transform: rotate(180deg);
-        padding-left: 5rem;
+        img.image-arrow.nav-list__icon180 {
+            transform: rotate(180deg);
+            padding-left: 5rem;
+            padding-right: 0rem;
+        }
     }
 
     & &__icon {

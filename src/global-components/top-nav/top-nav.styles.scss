@@ -42,13 +42,15 @@
         grid-template-columns: 3fr 1fr;
         justify-content: space-between;
         align-items: center;
-        max-width: 1017px;
+        max-width: auto;
         gap: 5rem;
     }
 
     & &__search {
         max-width: 661px;
         align-self: center;
+        border: 1px solid transparent;
+        border-radius: 50px;
     }
 
     & &__buttons {

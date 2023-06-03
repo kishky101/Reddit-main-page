@@ -23,7 +23,7 @@ const NavList: React.FC<NavListProps> = ({title, icon}) => {
                     <img src={icon} alt="icon" />
                     <p>{title}</p>
                 </div>
-                <img src={arrow} alt="arrow" id="arrow"  className={`${open? 'nav-list__icon180': ''}`}/>
+                <img src={arrow} alt="arrow" id="arrow"  className={`image-arrow ${open? 'nav-list__icon180': ''}`}/>
             </div>
             <div className={`nav-list__subtopics ${open? 'nav-list__subtopics--show': ''}`}>
                 <ul className="nav-list__subtopics-list">

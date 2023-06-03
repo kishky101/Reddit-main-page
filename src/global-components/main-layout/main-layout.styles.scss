@@ -1,6 +1,12 @@
 .main-layout {
-    display: flex;
-    gap: 4.9rem;
+    display: grid;
+    column-gap: 4.9rem;
+    grid-template-columns: 323px auto;
+
+    & &__scroll {
+        justify-self: center;
+        align-self: center;
+    }
 
     & &__aside {
         position: sticky;
@@ -40,7 +46,7 @@
 
     & &__right {
         position: sticky;
-        top: 77px;
+        top: 90px;
         align-self: flex-start;
 
     }
@@ -68,6 +74,9 @@
     }
 
     @media screen and (max-width: 1050px) {
+        display: flex;
+        gap: 4.9rem;
+
         & &__trends {
             display: none;
         }
